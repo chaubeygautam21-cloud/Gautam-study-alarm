@@ -1,0 +1,6 @@
+{
+  "name": "Study Alarm",
+  "description": "AI-powered study schedule alarm and reminder assistant that extracts timetables from handwritten images and automatically schedules study alarms.",
+  "requestFramePermissions": ["notifications"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

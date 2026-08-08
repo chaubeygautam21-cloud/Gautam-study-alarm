@@ -1,0 +1,15 @@
+{
+  "appId": "com.rrbalp.studyalarm",
+  "appName": "Study Alarm",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_alarm",
+      "iconColor": "#F59E0B",
+      "sound": "alarm_sound.wav"
+    }
+  }
+}
