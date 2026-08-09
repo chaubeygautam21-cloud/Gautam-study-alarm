@@ -16,10 +16,19 @@ jobs:
         with:
           node-version: 24
 
+      - name: Verify project files
+        run: |
+          echo "Checking project..."
+          test -f package.json
+          test -f index.html
+          test -f src/main.tsx
+          test -d android
+          echo "All required files found."
+
       - name: Install dependencies
         run: npm install
 
-      - name: Build web app
+      - name: Build web application
         run: npm run build
 
       - name: Sync Capacitor
@@ -31,7 +40,7 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Build Debug APK
+      - name: Build Android APK
         working-directory: android
         run: |
           chmod +x gradlew
